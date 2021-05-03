@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ToDo List App</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="Toastr/toastr.min.css" rel="stylesheet"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+        <link href="Styles/myStyles.css" rel="stylesheet"/>
+        <link rel="icon" href="Images/VG_7.png"/>
+    </head>
+    <body>
+        <button id="mode" class="btn"></button>
+        <div class="container">
+            <div>
+                <h1 class="text-center" id="head">ToDo List App</h1>
+                <br/>
+                <div class="row input-row" id="inputRow">
+                    <div class="col-10">
+                        <input type="text" id="taskInput" oninput="checkInput()" placeholder="Enter your task."/>
+                    </div>
+                    <div class="col-2 text-center">
+                        <p id="addTask"></p>
+                    </div>
+                </div>
+                <hr class="hr-one"/>
+                <div>
+                    <div id="addedTaskList">
+                        
+                    </div>
+                    <h5 id="noTaskTitle" class="displayTask">No Tasks , Time to Chill! <i class="far fa-laugh-beam"></i></h5>
+                </div>
+                <hr class="hr-two"/>
+            </div>
+        </div>
+        <div class="code-logo">
+            <button class="btn black-icon btnLogo" data-bs-toggle="modal" data-bs-target="#infoModal"><i class="fas fa-code fa-2x"></i></button>
+        </div>
+        <div class="dev-logo">
+            <a class="black-icon btn btnLogo" href="https://vickygupta-5a6e.hostman.site/" target="_blank"><i class="fas fa-user-circle fa-2x"></i></a>
+        </div>
+        <button class="btn info-contact black-icon btnLogo"><i class="fas fa-info-circle fa-3x"></i></button>
+        <div class="modal fade" id="infoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Project Info</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <table class="table table-hover table-bordered">
+                            <tr>
+                                <td>Name</td>
+                                <th colspan="2">ToDo List App</th>
+                            </tr>
+                            <tr>
+                                <td rowspan="5" class="align-middle">Technology / Sources</td>
+                            </tr>
+                            <tr>
+                                <th>HTML5</th>
+                                <th>CSS3</th>
+                            </tr>
+                            <tr>
+                                <th>Bootstrap</th>
+                                <th>JavaScript</th>
+                            </tr>
+                            <tr>
+                                <th>Toastr</th>
+                                <th>jQuery</th>
+                            </tr>
+                            <tr class="text-center">
+                                <th colspan="2">Font Awesome</th>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+        <script src="JS/jquery-1.9.1.min.js"></script>
+        <script src="Toastr/toastr.min.js"></script>
+        <script type="module" src="JS/appScript.js"></script>
+        <script src="JS/myScript.js"></script>
+    </body>
+</html>

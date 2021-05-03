@@ -1,0 +1,340 @@
+.bodyBG {
+  background-color: white;
+  color: black;
+}
+
+.bodyBG-dm {
+  background-color: #03071e;
+  color: white;
+}
+
+.container {
+  margin: auto;
+  margin-top: 70px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  width: 600px;
+}
+
+/* .taskButton {
+  border: none;
+  background-color: white;
+}
+
+.taskButton-dm {
+  border: none;
+  background-color: #03071e;
+} */
+
+#addedTaskList {
+  font-size: 23px;
+}
+
+.displayTask {
+  display: none;
+}
+
+.input-row {
+  border: 1px solid black;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.input-row-dm {
+  border: 1px solid white;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+input,
+input:focus {
+  border: none;
+  box-shadow: none;
+  outline: none;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  font-size: 20px;
+}
+
+.taskInput-dm {
+  border: none;
+  box-shadow: none;
+  outline: none;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  font-size: 20px;
+  color: white;
+  background-color: #03071e;
+}
+
+/* #addTask {
+  border: none;
+  background-color: white;
+}
+
+.addTask-dm {
+  border: none;
+  background-color: #03071e;
+} */
+
+#unique {
+  margin-top: 16px;
+}
+
+.fa-plus-red,
+.fa-save-red {
+  color: #d00000;
+}
+
+.fa-plus-green,
+.fa-save-green {
+  color: #1ae21a;
+}
+
+.hr-one,
+.hr-two {
+  border: 2px solid black;
+  border-radius: 1px;
+}
+
+.hr-one-dm,
+.hr-two-dm {
+  border: 2px solid white;
+  border-radius: 1px;
+}
+
+.hr-displayNone {
+  display: none;
+}
+
+.todoList {
+  padding: 16px;
+  clear: both;
+}
+
+.doneTasks {
+  text-decoration: line-through;
+}
+
+.delete-all,
+.delete-all:hover {
+  font-size: 20px;
+  float: right;
+}
+
+.animate-addTaskButton {
+  animation: animeAddTaskButton 0.3s linear forwards;
+}
+
+@keyframes animeAddTaskButton {
+  0% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(0.5);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  75% {
+    transform: scale(0.7);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+#mode {
+  right: 0;
+  position: absolute;
+}
+
+.logo-dm {
+  color: #fff;
+}
+
+.logo-dm:hover {
+  color: #fff;
+}
+
+.animate-mode {
+  animation: animeMode 0.3s linear forwards;
+}
+
+@keyframes animeMode {
+  0% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(0.7);
+  }
+  50% {
+    transform: scale(0.5);
+  }
+  75% {
+    transform: scale(0.7);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.toast-error {
+  background-color: #d00000;
+  font-weight: bold;
+}
+
+.black-icon {
+  color: black;
+}
+
+.info-contact {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
+
+.code-logo {
+  position: fixed;
+  display: none;
+  bottom: 0;
+  right: 0;
+}
+
+.animate-code-logo {
+  display: block;
+  animation: animeCode 0.5s linear forwards;
+}
+
+.hide-code-logo {
+  animation: hideCode 0.5s linear forwards;
+}
+
+@keyframes animeCode {
+  0% {
+    transform: translateY(0px);
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateY(-100px) rotate(360deg) scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes hideCode {
+  0% {
+    transform: translateY(-100px) scale(1);
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateY(0px) scale(1) rotate(-360deg);
+    opacity: 0;
+  }
+}
+
+.dev-logo {
+  position: fixed;
+  display: none;
+  bottom: 0;
+  right: 0;
+  margin-bottom: 10px;
+}
+
+.animate-dev-logo {
+  display: block;
+  animation: animeDev 0.5s linear forwards;
+}
+
+.hide-dev-logo {
+  animation: hideDev 0.5s linear forwards;
+}
+
+@keyframes animeDev {
+  0% {
+    transform: translateX(0px);
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateX(-100px) rotate(360deg) scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes hideDev {
+  0% {
+    transform: translateX(-100px) scale(1);
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateX(0px) scale(1) rotate(-360deg);
+    opacity: 0;
+  }
+}
+
+@media (min-width: 541px) and (max-width: 768px) {
+  .container {
+    margin: auto;
+    margin-top: 60px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    width: 500px;
+  }
+  #addedTaskList {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 401px) and (max-width: 540px) {
+  .container {
+    margin: auto;
+    margin-top: 60px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    width: 380px;
+  }
+  #addedTaskList {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 400px) {
+  .container {
+    margin: auto;
+    margin-top: 50px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    width: 300px;
+  }
+  #addedTaskList {
+    font-size: 18px;
+  }
+  body {
+    overflow: scroll;
+  }
+}
